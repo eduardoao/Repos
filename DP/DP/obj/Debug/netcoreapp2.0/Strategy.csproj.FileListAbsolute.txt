@@ -1,0 +1,11 @@
+C:\Users\eduar\source\repos\DP\DP\bin\Debug\netcoreapp2.0\Strategy.deps.json
+C:\Users\eduar\source\repos\DP\DP\bin\Debug\netcoreapp2.0\Strategy.runtimeconfig.json
+C:\Users\eduar\source\repos\DP\DP\bin\Debug\netcoreapp2.0\Strategy.runtimeconfig.dev.json
+C:\Users\eduar\source\repos\DP\DP\bin\Debug\netcoreapp2.0\Strategy.dll
+C:\Users\eduar\source\repos\DP\DP\bin\Debug\netcoreapp2.0\Strategy.pdb
+C:\Users\eduar\source\repos\DP\DP\obj\Debug\netcoreapp2.0\Strategy.csprojResolveAssemblyReference.cache
+C:\Users\eduar\source\repos\DP\DP\obj\Debug\netcoreapp2.0\Strategy.csproj.CoreCompileInputs.cache
+C:\Users\eduar\source\repos\DP\DP\obj\Debug\netcoreapp2.0\Strategy.AssemblyInfoInputs.cache
+C:\Users\eduar\source\repos\DP\DP\obj\Debug\netcoreapp2.0\Strategy.AssemblyInfo.cs
+C:\Users\eduar\source\repos\DP\DP\obj\Debug\netcoreapp2.0\Strategy.dll
+C:\Users\eduar\source\repos\DP\DP\obj\Debug\netcoreapp2.0\Strategy.pdb

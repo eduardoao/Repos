@@ -1,0 +1,11 @@
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\bin\Debug\netcoreapp2.0\WebLocadoras.deps.json
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\bin\Debug\netcoreapp2.0\WebLocadoras.runtimeconfig.json
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\bin\Debug\netcoreapp2.0\WebLocadoras.runtimeconfig.dev.json
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\bin\Debug\netcoreapp2.0\WebLocadoras.dll
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\bin\Debug\netcoreapp2.0\WebLocadoras.pdb
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\obj\Debug\netcoreapp2.0\WebLocadoras.csprojResolveAssemblyReference.cache
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\obj\Debug\netcoreapp2.0\WebLocadoras.csproj.CoreCompileInputs.cache
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\obj\Debug\netcoreapp2.0\WebLocadoras.AssemblyInfoInputs.cache
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\obj\Debug\netcoreapp2.0\WebLocadoras.AssemblyInfo.cs
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\obj\Debug\netcoreapp2.0\WebLocadoras.dll
+c:\users\eduar\source\repos\WebLocadoras\WebLocadoras\obj\Debug\netcoreapp2.0\WebLocadoras.pdb

@@ -1,0 +1,6 @@
+﻿{
+  "ConnectionStrings": {   
+    "DataAccessSql": "User ID=damienbod;Password=damienbod;Host=localhost;Port=5432;Database=damienbod;Pooling=true;",
+   
+  }
+}

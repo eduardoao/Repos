@@ -1,0 +1,16 @@
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\obj\Debug\netcoreapp2.0\UtWebLocadoras.csprojResolveAssemblyReference.cache
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\obj\Debug\netcoreapp2.0\UtWebLocadoras.csproj.CoreCompileInputs.cache
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\obj\Debug\netcoreapp2.0\UtWebLocadoras.AssemblyInfoInputs.cache
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\obj\Debug\netcoreapp2.0\UtWebLocadoras.AssemblyInfo.cs
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\bin\Debug\netcoreapp2.0\UtWebLocadoras.deps.json
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\bin\Debug\netcoreapp2.0\UtWebLocadoras.runtimeconfig.json
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\bin\Debug\netcoreapp2.0\UtWebLocadoras.runtimeconfig.dev.json
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\bin\Debug\netcoreapp2.0\UtWebLocadoras.dll
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\bin\Debug\netcoreapp2.0\UtWebLocadoras.pdb
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\bin\Debug\netcoreapp2.0\WebLocadoras.dll
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\bin\Debug\netcoreapp2.0\WebLocadoras.pdb
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\obj\Debug\netcoreapp2.0\UtWebLocadoras.dll
+c:\users\eduar\source\repos\WebLocadoras\UtWebLocadoras\obj\Debug\netcoreapp2.0\UtWebLocadoras.pdb
