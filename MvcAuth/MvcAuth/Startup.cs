@@ -29,6 +29,7 @@ namespace MvcAuth
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            
 
             services.AddAuthentication().AddLinkedIn(options =>
             {
