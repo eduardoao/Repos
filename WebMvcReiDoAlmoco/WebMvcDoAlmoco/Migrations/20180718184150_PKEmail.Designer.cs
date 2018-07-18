@@ -11,8 +11,8 @@ using WebMvcReiDoAlmoco;
 namespace WebMvcDoAlmoco.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20180717002543_Inicial")]
-    partial class Inicial
+    [Migration("20180718184150_PKEmail")]
+    partial class PKEmail
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,14 +23,14 @@ namespace WebMvcDoAlmoco.Migrations
 
             modelBuilder.Entity("WebMvcDoAlmoco.Models.Candidato", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<string>("Email")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Email");
+                    b.Property<int>("Id");
 
                     b.Property<string>("Nome");
 
-                    b.HasKey("Id");
+                    b.HasKey("Email");
 
                     b.ToTable("Candidato");
                 });
@@ -54,7 +54,7 @@ namespace WebMvcDoAlmoco.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("CandidatoId");
+                    b.Property<string>("CandidatoEmail");
 
                     b.Property<int?>("VotacaoId");
 
@@ -62,7 +62,7 @@ namespace WebMvcDoAlmoco.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CandidatoId");
+                    b.HasIndex("CandidatoEmail");
 
                     b.HasIndex("VotacaoId");
 
@@ -73,7 +73,7 @@ namespace WebMvcDoAlmoco.Migrations
                 {
                     b.HasOne("WebMvcDoAlmoco.Models.Candidato", "Candidato")
                         .WithMany()
-                        .HasForeignKey("CandidatoId");
+                        .HasForeignKey("CandidatoEmail");
 
                     b.HasOne("WebMvcDoAlmoco.Models.Votacao")
                         .WithMany("ListaCandidato")

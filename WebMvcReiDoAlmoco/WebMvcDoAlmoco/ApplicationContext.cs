@@ -21,7 +21,7 @@ namespace WebMvcReiDoAlmoco
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Candidato>().HasKey(c => c.Id);
+            modelBuilder.Entity<Candidato>().HasKey(c => c.Email);
 
             modelBuilder.Entity<Votacao>().HasKey(v => v.Id);
             modelBuilder.Entity<Votacao>().HasMany(c => c.ListaCandidato);

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace WebMvcDoAlmoco.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class PKEmail : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,14 +13,13 @@ namespace WebMvcDoAlmoco.Migrations
                 name: "Candidato",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Email = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: false),
+                    Id = table.Column<int>(nullable: false),
                     Nome = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Candidato", x => x.Id);
+                    table.PrimaryKey("PK_Candidato", x => x.Email);
                 });
 
             migrationBuilder.CreateTable(
@@ -43,7 +42,7 @@ namespace WebMvcDoAlmoco.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    CandidatoId = table.Column<int>(nullable: true),
+                    CandidatoEmail = table.Column<string>(nullable: true),
                     VotacaoId = table.Column<int>(nullable: true),
                     Voto = table.Column<int>(nullable: false)
                 },
@@ -51,10 +50,10 @@ namespace WebMvcDoAlmoco.Migrations
                 {
                     table.PrimaryKey("PK_CandidatoVotacao", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_CandidatoVotacao_Candidato_CandidatoId",
-                        column: x => x.CandidatoId,
+                        name: "FK_CandidatoVotacao_Candidato_CandidatoEmail",
+                        column: x => x.CandidatoEmail,
                         principalTable: "Candidato",
-                        principalColumn: "Id",
+                        principalColumn: "Email",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_CandidatoVotacao_Votacao_VotacaoId",
@@ -65,9 +64,9 @@ namespace WebMvcDoAlmoco.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_CandidatoVotacao_CandidatoId",
+                name: "IX_CandidatoVotacao_CandidatoEmail",
                 table: "CandidatoVotacao",
-                column: "CandidatoId");
+                column: "CandidatoEmail");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CandidatoVotacao_VotacaoId",

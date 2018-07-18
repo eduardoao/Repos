@@ -8,10 +8,11 @@ using WebMvcReiDoAlmoco.Interfaces;
 
 namespace WebMvcDoAlmoco.Repositorio
 {
-    public class CandidatoRepositorio : BaseRepository<Candidato>, ICandidatoRepositorio
-    {       
+    public class VotacaoRepositorio : BaseRepository<Votacao>, IVotacaoRepositorio
+    {
+             
 
-        public CandidatoRepositorio(ApplicationContext contexto) : base(contexto)
+        public VotacaoRepositorio(ApplicationContext contexto) : base(contexto)
         {
             
         }
@@ -28,16 +29,16 @@ namespace WebMvcDoAlmoco.Repositorio
         {
             contexto.Remove(baseModel);
             contexto.SaveChanges();
-        }
+        }      
 
-        public Candidato Retornar(string email)
+        public Votacao Retornar(DateTime data)
         {
-            return contexto.Candidato.Find(email);
+            return contexto.Votacao.Find(data);
         }
 
         public IList<BaseModel> RetornarTodos()
         {
-            IQueryable<BaseModel> retorno = contexto.Set<Candidato>();
+            IQueryable<BaseModel> retorno = contexto.Set<Votacao>();
             return retorno.ToList();
         }
     }

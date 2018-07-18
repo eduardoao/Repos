@@ -1,37 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebMvcDoAlmoco.Models;
+using WebMvcReiDoAlmoco.Interfaces;
 
 namespace WebMvcDoAlmoco.Controllers
 {
     public class HomeController : Controller
     {
+        IVotacaoRepositorio _votacaoRepositorio;
+
+        public HomeController(IVotacaoRepositorio votacaoRepositorio)
+        {
+            _votacaoRepositorio = votacaoRepositorio;
+        }
+              
+      
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
+            var listaReis =  RetornarReisUltimasSemanas();
 
             return View();
         }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
+               
 
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        private IList<Votacao> RetornarReisUltimasSemanas()
+        {
+            var retornaTodos = _votacaoRepositorio.RetornarTodos();
+            return null;
+        }
+
+
+
     }
 }
