@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace WebMvcDoAlmoco.Migrations
 {
-    public partial class PKEmail : Migration
+    public partial class Init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

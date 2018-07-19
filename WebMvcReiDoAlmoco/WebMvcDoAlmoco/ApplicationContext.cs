@@ -1,14 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using WebMvcDoAlmoco.Models;
 
 
 namespace WebMvcReiDoAlmoco
 {
-    public class ApplicationContext: DbContext
+    public class ApplicationContext: IdentityDbContext<ApplicationUser>
     {
         public ApplicationContext(DbContextOptions<ApplicationContext> options): base(options)
         {
-
 
         }
 
@@ -30,4 +30,6 @@ namespace WebMvcReiDoAlmoco
         }
 
     }
+   
+
 }

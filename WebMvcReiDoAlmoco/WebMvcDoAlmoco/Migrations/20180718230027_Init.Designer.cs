@@ -11,8 +11,8 @@ using WebMvcReiDoAlmoco;
 namespace WebMvcDoAlmoco.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20180718184150_PKEmail")]
-    partial class PKEmail
+    [Migration("20180718230027_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

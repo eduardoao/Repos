@@ -76,7 +76,6 @@ namespace MvcAuth
 
 
             //var google = new Microsoft.AspNetCore.Authentication.Google.GoogleOptions { ClientId = "740735999597-jnejf7vaf2frkhev4u2fqakbij1ms0d9.apps.googleusercontent.com", ClientSecret = "iiLujKZKsBg4xjhhrJL0upjt" };
-
             //app.UseGoogleAuthentication(google);
 
 

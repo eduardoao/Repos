@@ -18,27 +18,58 @@ namespace WebMvcDoAlmoco.Repositorio
 
 
         public void Adicionar(BaseModel baseModel)
-        {        
-             contexto.Add(baseModel);
-             contexto.SaveChanges();
+        {
+            try
+            {
+                contexto.Add(baseModel);
+                contexto.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(string.Format("Erro ao acessar a base de dados. Descrição: {0}", ex.Message), ex);
+            }            
            
         }
 
         public void Remover(BaseModel baseModel)
         {
-            contexto.Remove(baseModel);
-            contexto.SaveChanges();
+            try
+            {
+                contexto.Remove(baseModel);
+                contexto.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(string.Format("Erro ao acessar a base de dados. Descrição: {0}", ex.Message), ex);
+            }
+            
         }
 
         public Candidato Retornar(string email)
         {
-            return contexto.Candidato.Find(email);
+            try
+            {
+                return contexto.Candidato.Find(email);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(string.Format("Erro ao acessar a base de dados. Descrição: {0}", ex.Message), ex);
+            }
+           
         }
 
         public IList<BaseModel> RetornarTodos()
         {
-            IQueryable<BaseModel> retorno = contexto.Set<Candidato>();
-            return retorno.ToList();
+            try
+            {
+                IQueryable<BaseModel> retorno = contexto.Set<Candidato>();
+                return retorno.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(string.Format("Erro ao acessar a base de dados. Descrição: {0}", ex.Message), ex);
+            }
+            
         }
     }
 }

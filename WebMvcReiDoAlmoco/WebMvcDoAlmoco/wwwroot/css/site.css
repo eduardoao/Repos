@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('../images/rei-do-almoco-bg.jpg');
 }
 
 /* Wrapping element */
@@ -9,6 +10,7 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+
 
 /* Carousel */
 .carousel-caption p {
@@ -32,4 +34,15 @@
     .carousel-caption {
         display: none;
     }
+}
+
+.container-master {
+    background-color: white;
+}
+
+.form-control {
+    /*padding: 50px 25px;*/
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    width: 80%;
 }
